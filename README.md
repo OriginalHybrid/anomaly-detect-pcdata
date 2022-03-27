@@ -23,7 +23,7 @@ One of the keys to machine learning is investigating how to frame your data in a
 
 
 ### Train Evaluation
-![Training Result](images\train.png)
+![Training Result](https://github.com/OriginalHybrid/anomaly-detect-pcdata/blob/main/images/train.png)
 
 
 The answer to if we can just use the raw temperature as the input is an emphatic no. This makes intuitive sense — for example, at 35°C, the heater is either on or off. However, the change in temperature would tell us a whole lot about what the heater is doing.
@@ -33,7 +33,7 @@ Here is when the problem hits. We know the classifier works well to tell us when
 The process is really the same. The only difference is now we have an anomaly in the data. We’ll create the new feature (change in temperature, using the smoothed rolling average), scale the data, and feed it into the classifier to predict.
 
 
-![Anomaly Result](images\anomaly.png)
+![Anomaly Result](https://github.com/OriginalHybrid/anomaly-detect-pcdata/blob/main/images/anomaly.png)
 
 This looks like it worked well! We see the prediction is that the heater is off when the fan is running, when in reality the heater is on, there’s just an anomalous event. 
 
